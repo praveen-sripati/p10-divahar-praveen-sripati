@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.box-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  font-size: xx-large;
+}
+
+.box-container {
+  display: flex;
+  flex-flow: row wrap;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.box-container:hover .one {
+  animation-name: rotate-box-one-four;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.box-container:hover .two {
+  animation-name: rotate-box-two-three;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.box-container:hover .three {
+  animation-name: rotate-box-two-three;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.box-container:hover .four {
+  animation-name: rotate-box-one-four;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.box {
+  width: 50%;
+  height: 50%;
+  outline: 1px solid black;
+}
+
+.one {
+  background: red;
+  transform-origin: top left;
+  animation-name: reverse-box-one-four;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.two {
+  background: yellow;
+  transform-origin: top right;
+  animation-name: reverse-box-two-three;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.three {
+  background: blue;
+  transform-origin: bottom left;
+  animation-name: reverse-box-two-three;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.four {
+  background: green;
+  transform-origin: bottom right;
+  animation-name: reverse-box-one-four;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+/* rotate animations */
+
+@keyframes rotate-box-one-four {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotate-box-two-three {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+}
+
+/* rotate reverse animations */
+
+@keyframes reverse-box-one-four {
+  from {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes reverse-box-two-three {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
