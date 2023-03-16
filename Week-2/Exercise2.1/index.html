@@ -4,20 +4,126 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animation</title>
+  <title>Ex 2.1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <main class="main-wrapper">
-    <section class="box-wrapper text-center">
-      Hi
-      <section class="box-container">
-        <div class="box one"></div>
-        <div class="box two"></div>
-        <div class="box three"></div>
-        <div class="box four"></div>
-      </section>
+  <header class="text-center mb-12 mt-4">
+    <h1>Lorem ipsum dolor sit</h1>
+    <p class="header-desc">Eligendi minus consequatur in velit vel quo illo consectetur odio</p>
+  </header>
+  <main class="mb-12">
+    <section class="d-flex flex-wrap mb-12">
+      <article class="article flex mr-12">
+        <h2 class="mb-3">Lorem ipsum dolor sit</h2>
+        <p class="article-desc text-justify mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ex velit officia inventore ipsa iure accusamus rem, illum, quam necessitatibus id provident deleniti dolorem quo ut nisi! Molestias, recusandae nostrum!
+        Explicabo, tenetur, fugit enim, laudantium esse laborum eveniet possimus perferendis tempore veniam voluptatem consequuntur porro corporis quasi adipisci reiciendis dolorum illum est! Itaque architecto at ipsam exercitationem! Maiores, recusandae illum!</p>
+        <a href="https://www.google.com/" target="_blank" class="link-btn">Link</a>
+      </article>
+      <article class="article flex">
+        <h2 class="mb-3">Lorem ipsum dolor sit</h2>
+        <p class="article-desc text-justify mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate saepe eaque ex illum obcaecati facere aspernatur! Labore impedit amet obcaecati quis error velit similique modi, soluta distinctio, harum fugit? Totam.quasi adipisci reiciendis dolorum illum est! Itaque architecto at ipsam exercitationem! Maiores, recusandae illum!</p>
+        <a href="https://www.google.com/" target="_blank" class="link-btn">Link</a>
+      </article>
     </section>
+    <article class="article d-flex">
+      <img src="https://picsum.photos/300" width="300"
+      height="300" class="mr-12" referrerpolicy="no-referrer" alt="Random image">
+      <div class="d-flex flex-column">
+        <h2 class="mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit</h2>
+        <p class="article-desc text-justify mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad ab ex voluptate tempora eos aut pariatur, repudiandae totam officia beatae! Velit accusantium molestiae, odio animi facilis mollitia excepturi nulla commodi.
+        Aut sint animi aspernatur perspiciatis veritatis, quas adipisci hic quos suscipit impedit doloremque, dolorem quisquam iste quo cupiditate ducimus repellendus eaque modi unde id doloribus voluptas optio praesentium saepe! Ut?
+        Amet ea doloribus neque facere perferendis pariatur quos ipsa eligendi, minus mollitia, odit, vitae voluptates natus! Expedita hic autem doloremque maiores! Ex, cum ad unde laboriosam veniam maxime recusandae? Atque?
+        Voluptatibus quod voluptate, laborum ea pariatur porro unde placeat deleniti vitae tempore commodi itaque soluta laboriosam corrupti quia voluptatem vero corporis reprehenderit debitis animi hic? Nam numquam quaerat pariatur? Quas.</p>
+        <a href="https://www.google.com/" target="_blank" class="link-btn align-self-start">Link</a>
+      </div>
+    </article>
+    <form action="">
+      <fieldset>
+        <legend>Honorifics</legend>
+        <label class="mr-4">
+          Mr.
+          <input type="radio" name="honorifics" value="Mr." checked/>
+        </label>
+        <label class="mr-4">
+          Mrs.
+          <input type="radio" name="honorifics" value="Mrs." />
+        </label>
+        <label>
+          Miss
+          <input type="radio" name="honorifics" value="Miss" />
+        </label>
+      </fieldset>
+      <label class="mb-4 mr-4">
+        First Name: 
+        <input type="text" name="firstName" required/>
+      </label>
+      <label class="mb-4">
+        Last Name: 
+        <input type="text" name="firstName" required/>
+      </label>
+      <label class="mb-4 mr-4">
+        Email: 
+        <input type="email" name="firstName" required/>
+      </label>
+      <label class="mb-4">
+        Phone no.: 
+        <input type="tel" name="firstName" required/>
+      </label>
+      <label class="mb-4 mr-4">
+        Password: 
+        <input type="password" name="firstName" required/>
+      </label>
+      <label class="mb-4">
+        Confirm password:
+        <input type="password" name="firstName" required/>
+      </label>
+      <label class="mb-4 mr-4">
+        Country:
+        <select name="country" required>
+          <option value="India">India</option>
+          <option value="Japan">Japan</option>
+          <option value="USA">USA</option>
+          <option value="China">China</option>
+        </select>
+      </label>
+      <button class="mt-4">Submit</button>
+    </form>
   </main>
+  <footer>
+    <section class="footer-list">
+      <ul>
+        <li><h3>COMPANY NAME</h3></li>
+        <li><p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></li>
+      </ul>
+      <ul>
+        <li><h3>PRODUCTS</h3></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+      </ul>
+      <ul>
+        <li><h3>USEFUL LINKS</h3></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+      </ul>
+      <ul>
+        <li><h3>CONTACT</h3></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+        <li><a href="#">Lorem</a></li>
+      </ul>
+    </section>
+    <p class="footer-copyright">
+      © 2021 Copyright: Praveen Sripati
+    </p>
+  </footer>
 </body>
 </html>
